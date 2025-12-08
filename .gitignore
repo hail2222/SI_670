@@ -1,0 +1,10 @@
+# Exclude dataset folder
+dataset/
+
+# Exclude all CSV files
+*.csv
+
+# Exclude all Pickle files
+*.pkl
+
+launch_chrome_parallel.sh

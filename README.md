@@ -1,0 +1,20 @@
+# SI670
+
+## Notebook Execution Guide
+
+## Roles
+- `project.ipynb`: Builds the first flattened dataset from the raw `.info` files, adds a caption-based ad flag, and runs quick descriptive checks on likes/comments.
+- `project2.ipynb`: End-to-end data engineering pipeline that saves `clean_posts.pkl/csv`, translates captions and comments, runs RoBERTa sentiment, enriches with follower counts, and exports `clean_posts_ready.*`.
+- `scrape_followers_single.py`: Selenium helper that attaches to an existing Chrome session, scrapes follower counts for every `owner_username`, and writes `followers_output.csv` so engagement rates stay current before analytics.
+- `project2_anlaytics.ipynb`: Broad exploratory analytics on `clean_posts_ready.csv`, including k-means clustering, ad vs. non-ad engagement comparisons, and feature correlation digs.
+- `project2_analytics2.ipynb`: Audience-reaction module that parses cleaned comments, engineers verbosity/tone features, performs GMM clustering on active posts, and profiles each segment’s engagement/ad mix.
+- `project2_analytics_model.ipynb`: Predictive modeling notebook that prepares numeric features, trains logistic/tree models for engagement-rate prediction, and reports performance plus feature influence.
+
+## Recommended Execution Order
+1. `project.ipynb` – Validate raw ingestion and caption ad tagging on a lean feature set.
+2. `project2.ipynb` – Produce the cleaned/transformed datasets that power downstream work.
+3. `scrape_followers_single.py` – Refresh `followers_output.csv` via Selenium before final merges/analytics whenever follower counts need an update.
+4. `project2_anlaytics.ipynb` – Run the general exploratory analyses on the prepared data.
+5. `project2_analytics2.ipynb` – Layer on audience/comment segmentation insights.
+6. `project2_analytics_model.ipynb` – Finish with predictive modeling and interpretability.
+
