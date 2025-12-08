@@ -15,8 +15,8 @@ The Instagram dataset used in this project cannot be redistributed because of In
 
 ### Recommended Execution Order
 
-1. `project2.ipynb` – Produce the cleaned/transformed datasets that power downstream work.
-2. `scrape_followers_single.py` – Refresh `followers_output.csv` via Selenium before final merges/analytics whenever follower counts need an update.
+1. - `project2.ipynb` – Produce the cleaned/transformed datasets that power downstream work.
+   - `scrape_followers_single.py` – Refresh `followers_output.csv` via Selenium before final merges/analytics whenever follower counts need an update.
 3. `project2_anlaytics.ipynb` – Run the general exploratory analyses on the prepared data.
 4. `project2_analytics2.ipynb` – Layer on audience/comment segmentation insights.
 5. `project2_analytics_model.ipynb` – Finish with predictive modeling and interpretability.
