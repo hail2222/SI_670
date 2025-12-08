@@ -1,5 +1,8 @@
 # SI670
 
+## Data Access Notice
+The Instagram dataset used in this project cannot be redistributed because of Instagram’s privacy policy; it was obtained directly from the original paper’s authors. For dataset details and access requests, please refer to the publication: https://dl.acm.org/doi/fullHtml/10.1145/3366423.3380052
+
 ## Notebook Execution Guide
 
 ## Roles
