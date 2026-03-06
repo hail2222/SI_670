@@ -4,7 +4,7 @@
 
 Click the poster to view the full PDF.
 
-<a href="assets/poster.pdf">
+<a href="assets/670_poster_final.pdf">
   <img src="assets/670_poster_final.png" width="800">
 </a>
 
